@@ -21,6 +21,6 @@ export class sideNavComponent implements OnInit {
 		               {label: 'Director', icon: 'fa-home', routerLink: '/director'}
 
 		           ]
-		       }];		
+		       }];			  	
 	}
 }

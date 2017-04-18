@@ -17,7 +17,7 @@ import { ButtonModule }  from 'primeng/primeng';
 import { RoutingModule } from './app.route.module';
 import { topComponent } from './top/top.component';
 import { sideNavComponent } from './sideNav/sideNav.component';
-import { MenuModule, TabViewModule } from 'primeng/primeng';
+import { MenuModule, TabViewModule, DataTableModule, SharedModule, MultiSelectModule } from 'primeng/primeng';
 import { TaskComponent } from './task/task.component';
 import { DirectorComponent } from './director/director.component';
 import { DirectorListComponent, DirectorListNestedComponent } from './director/directorlist.component';
@@ -38,7 +38,10 @@ let CUSTOM_COMPONENT = [ AppComponent, topComponent, sideNavComponent, TaskCompo
     PanelModule,
     MenuModule,
     TabViewModule,
+    DataTableModule,
+    SharedModule,
     RoutingModule,
+    MultiSelectModule,
     FusionChartsModule.forRoot(FusionCharts, Charts)
 
   ],

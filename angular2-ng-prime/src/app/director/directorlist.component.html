@@ -4,8 +4,18 @@
 		<p-tabPanel header="Fusion Chart">
 			<chart></chart>
 		</p-tabPanel>
-		<p-tabPanel header="Header 2">
-			Content 2
+		<p-tabPanel header="Table View">
+			<p-dataTable [value]="cars" [rows]="8"  [editable]="true" [paginator]="true" [pageLinks]="3" [rowsPerPageOptions]="[5,10,20]" [responsive]="true" [stacked]="stacked">
+				<p-header>
+					<div style="text-align:left">
+						<p-multiSelect [options]="columnOptions" [(ngModel)]="cols"></p-multiSelect>
+					</div>
+				</p-header>
+				<p-column field="vin" header="Vin" [sortable]="true" [editable]="true" ></p-column>
+				<p-column field="year" header="Year" [sortable]="true" [editable]="true" ></p-column>
+				<p-column field="brand" header="Brand" [sortable]="true" [editable]="true"></p-column>
+				<p-column field="color" header="Color" [sortable]="true" [editable]="true" ></p-column>
+			</p-dataTable>
 		</p-tabPanel>
 		<p-tabPanel header="Header 3">
 			Content 3    

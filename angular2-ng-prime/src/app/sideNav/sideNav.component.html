@@ -1,4 +1,4 @@
 <nav class="sidenav-container">
-	<button #btn type="button" pButton icon="fa fa-list" label="Click Menu" (click)="menu.toggle($event)"></button>
+	<button #btn type="button" pButton icon="fa fa-list menu-link" (click)="menu.toggle($event);"></button>
 	<p-menu #menu [model]="items" class="menu-wrapper" [popup]="true"></p-menu>
 </nav>
